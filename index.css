@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cabeçalho*/
+header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+#container-header{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo{
+    color: white;
+    font-size: 27px;
+    font-family: Consolas, monaco, monospace;
+    margin-top: 50px;
+
+}
+#container-header ul{
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    margin-top: 55px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+
+#container-header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+}
+#container-header ul li a:hover{
+    color: rgb(145, 145, 145);
+    font-size: 15px;
+}
+#container-search{
+    display: flex;
+    flex-direction: row;
+}
+#container-search ion-icon{
+    cursor: pointer;
+    fill: white;
+    margin-top: 48px;
+    margin-right: 5px;
+    width: 27px;
+    height: 27px;
+}
+#search{
+    margin-top: 47px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border: none;
+    height: 30px;
+    width: 100%;
+    border-radius: 30px;
+    caret-color: red;
+    color: white;
+    padding: 3px;
+}
+#search:hover{
+    box-shadow: inset 0px 0px 8px rgba(8, 122, 126, 0.118);
+
+}
+
+/*body*/
+body{
+    background: radial-gradient( rgb(29, 29, 29),rgb(21, 21, 21), rgb(17, 17, 17),rgb(12, 12, 12),rgb(0, 0, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 100vh;
+}
+
+/*main*/
+#container-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    
+}
+#container-redes-sociais ion-icon{
+    margin-top: 15px;
+    padding: 5px;
+    fill: rgb(99, 98, 98);
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+#container-redes-sociais ion-icon:hover{
+    fill: white;
+    width: 25px;
+    height: 25px;
+}
+#container-geral-article{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 5%;
+    width: 90%; 
+}
+
+#container-geral-article model-viewer{
+    position: absolute;
+    left: 30%;
+    top: 0px;
+    width: 900px;
+    height: 500px;
+}
+#info{
+    margin-top: 90px;
+    margin-left: 15%;
+}
+#info h3{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    letter-spacing:0.3rem;
+    font-style: italic;
+}
+#info div{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    letter-spacing:0.3rem;
+    color: rgb(181, 179, 179);
+    font-size: 25px;
+    width: 45%;
+}
+#info h4{
+    margin-top: 3px;
+    color: rgb(196, 196, 196);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
+
+/*rodapé*/
+footer{
+    display: flex;
+    position: relative;
+    top: 200px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: -3px 0px 2px rgb(100, 100, 100);
+    width: 100%;
+    height: 60px;
+}
+footer div{
+    font-size: 10px;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 0.3rem;
+    margin: 0 auto;
+    margin-top: 25px;
+}
